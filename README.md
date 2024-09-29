@@ -135,19 +135,6 @@ if __name__ == "__main__":
    OPENAI_API_KEY=your_openai_api_key
    ```
 
-### Step 4: Add to GitHub
-1. Initialize Git in your project folder:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit of alt text generator"
-   ```
-2. Create a repository on GitHub and push the changes:
-   ```bash
-   git remote add origin https://github.com/yourusername/your-repo.git
-   git push -u origin master
-   ```
-
 ## Usage
 1. Select or highlight content (text or image).
 2. Press `Ctrl + Alt + C` to copy the content and generate alt text.
