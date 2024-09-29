@@ -72,7 +72,7 @@ async def get_description(text=None, image=None):
             response = await asyncio.to_thread(client.chat.completions.create,
                                                model="gpt-4o",
                                                messages=[
-                                                   {"role": "system", "content": "You are a helpful assistant that provides concise summaries of text for alt text in just one to two sentence. Do not include the words image of or image of this."},
+                                                   {"role": "system", "content": "You are a helpful assistant that provides concise summaries of text for alt text in just one to two sentences. Make sure to limit your response to only alt text for the content. If there's too much content, just try to give a concise summary in one sentence."},
                                                    {"role": "user", "content": f"Provide a one to two sentence description of the following text: {text}"}
                                                ],
                                                max_tokens=100)
